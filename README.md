@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Flask Application for testing the ML model 
 
 This is a Flask web application for that is used to test the ML model 
@@ -41,23 +41,22 @@ After hosting the application, you can access it through a web browser. The appl
 
 ## directory-structure
 
+```
 MODEL_TEST/
 │
 ├── static/
 │   └── css/
-│       └── style.css        # CSS stylesheets (optional)
+│       └── style.css      # CSS stylesheets (optional)
 │
 ├── templates/
-│   ├── index.html          # HTML template for the form page
-│   └── prediction.html     # HTML template for displaying prediction result
+│   ├── index.html         # HTML template for the form page
+│   └── prediction.html    # HTML template for displaying prediction result
 │
-├── app.py                  # Flask application code
-│
-├── hybrid_ann_model_3.h5   # Pre-trained model file
-│
-├── requirements.txt         # File listing all Python dependencies
-│
-└── README.md                # Documentation or instructions
+├── app.py                 # Flask application code
+├── hybrid_ann_model_3.h5  # Pre-trained model file
+├── requirements.txt       # File listing all Python dependencies
+└── README.md              # Documentation or instructions
+```
 
 
 ## Dependencies
@@ -72,7 +71,5 @@ The following Python libraries are required to run the application:
 * seaborn
 * scikit-learn
 * tensorflow
-=======
-# NIDS_model_testing
-Model testing of NIDS
->>>>>>> 52aa77dadca75eedcb7bd995e994eaf56953c244
+
+
