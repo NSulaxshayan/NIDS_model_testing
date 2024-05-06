@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Packet Classification</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Network Packet Classification</h1>
+    <form action="/predict" method="post">
+
+        <label for="IN_BYTES">IN_BYTES:</label><br>
+        <input type="text" id="IN_BYTES" name="IN_BYTES" required><br>
+        
+        <label for="IN_PKTS">IN_PKTS:</label><br>
+        <input type="text" id="IN_PKTS" name="IN_PKTS" required><br>
+        
+        <label for="OUT_BYTES">OUT_BYTES:</label><br>
+        <input type="text" id="OUT_BYTES" name="OUT_BYTES" required><br>
+
+        <label for="MIN_TTL">MIN_TTL:</label><br>
+        <input type="text" id="MIN_TTL" name="MIN_TTL" required><br>
+
+        <label for="MAX_TTL">MAX_TTL:</label><br>
+        <input type="text" id="MAX_TTL" name="MAX_TTL" required><br>
+
+        <label for="TCP_WIN_MAX_IN">TCP_WIN_MAX_IN:</label><br>
+        <input type="text" id="TCP_WIN_MAX_IN" name="TCP_WIN_MAX_IN" required><br>
+
+        <label for="TCP_WIN_MAX_OUT">TCP_WIN_MAX_OUT:</label><br>
+        <input type="text" id="TCP_WIN_MAX_OUT" name="TCP_WIN_MAX_OUT" required><br>
+
+        <label for="FLOW_DURATION_MILLISECONDS">FLOW_DURATION_MILLISECONDS:</label><br>
+        <input type="text" id="FLOW_DURATION_MILLISECONDS" name="FLOW_DURATION_MILLISECONDS" required><br>
+
+        <label for="DURATION_IN">DURATION_IN:</label><br>
+        <input type="text" id="DURATION_IN" name="DURATION_IN" required><br>
+
+        <label for="DURATION_OUT">DURATION_OUT:</label><br>
+        <input type="text" id="DURATION_OUT" name="DURATION_OUT" required><br>
+
+        <label for="DST_TO_SRC_SECOND_BYTES">DST_TO_SRC_SECOND_BYTES:</label><br>
+        <input type="text" id="DST_TO_SRC_SECOND_BYTES" name="DST_TO_SRC_SECOND_BYTES" required><br>
+
+        <label for="RETRANSMITTED_OUT_BYTES">RETRANSMITTED_OUT_BYTES:</label><br>
+        <input type="text" id="RETRANSMITTED_OUT_BYTES" name="RETRANSMITTED_OUT_BYTES" required><br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
